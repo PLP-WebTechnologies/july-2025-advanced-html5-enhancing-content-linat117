@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventers</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+      }
+      header {
+        background-color: rgb(44, 67, 72);
+        padding: 100px 20px;
+        color: rgb(190, 249, 230);
+        text-align: center;
+        font-family: cursive;
+      }
+      header h1 {
+        font-size: 60px;
+        margin-bottom: 10px;
+      }
+      header p {
+        font-size: 18px;
+      }
+
+      .we-do {
+        background-color: rgb(201, 237, 226);
+        margin: 60px 180px;
+        padding: 70px 80px;
+        border-radius: 42px;
+        display: flex;
+        gap: 100px;
+        flex-wrap: wrap;
+      }
+      .lefth {
+        text-align: center;
+        font-size: 40px;
+        font-family: cursive;
+        margin-bottom: 20px;
+      }
+      .leftl {
+        font-size: 20px;
+        padding-left: 20px;
+      }
+      .right img {
+        border-radius: 42px;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .events {
+        background-color: rgb(237, 237, 237);
+        text-align: center;
+        padding: 40px 20px;
+      }
+      .eventsh {
+        font-size: 40px;
+        font-family: cursive;
+        margin-bottom: 20px;
+      }
+      table {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 15px;
+        border: 1px solid #ccc;
+        text-align: center;
+      }
+      th {
+        background-color: rgb(44, 67, 72);
+        color: rgb(190, 249, 230);
+      }
+
+      .ourevents {
+        text-align: center;
+        padding: 60px 20px;
+      }
+
+      .ourevents img,
+      .ourevents video {
+        max-width: 90%;
+        height: auto;
+        margin: 20px 0;
+        border-radius: 16px;
+      }
+
+      section form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        background-color: #fff;
+        border-radius: 16px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      form fieldset {
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      form legend {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      form label {
+        display: block;
+        margin-top: 15px;
+        font-weight: 600;
+      }
+
+      form input,
+      form select,
+      form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+      }
+
+      form textarea {
+        resize: vertical;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto 0;
+        padding: 12px 24px;
+        background-color: rgb(44, 67, 72);
+        color: rgb(190, 249, 230);
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      footer {
+        background-color: rgb(44, 67, 72);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        margin-top: 60px;
+      }
+
+      @media (max-width: 768px) {
+        .we-do {
+          flex-direction: column;
+          margin: 40px 20px;
+          padding: 40px 20px;
+        }
+
+        .eventsh {
+          font-size: 30px;
+        }
+
+        header h1 {
+          font-size: 40px;
+        }
+
+        table {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to our events</h1>
+      <p>Your digital solution for searching for events and registering.</p>
+    </header>
+
+    <div>
+      <section class="we-do">
+        <div class="left">
+          <h2 class="lefth">What we do</h2>
+          <ul class="leftl">
+            <li>We digitalize event registration solutions.</li>
+            <li>We help you check events at your place.</li>
+            <li>We save your time and energy.</li>
+          </ul>
+        </div>
+        <div class="right">
+          <img
+            src="https://images.unsplash.com/photo-1522158637959-30385a09e0da?w=600&auto=format&fit=crop&q=60"
+            alt="People networking at an event"
+            width="300"
+            height="200"
+          />
+        </div>
+      </section>
+
+      <section class="events">
+        <h2 class="eventsh">Check out our events</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Event name</th>
+              <th>Time</th>
+              <th>Organizer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fashion Show</td>
+              <td>2 PM LT</td>
+              <td>Designer Hilina</td>
+            </tr>
+            <tr>
+              <td>Concert</td>
+              <td>8 PM LT</td>
+              <td>Musician Hilina</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="ourevents">
+        <h2>Events we organized last week</h2>
+        <img
+          src="https://images.unsplash.com/photo-1486591978090-58e619d37fe7?w=600&auto=format&fit=crop&q=60"
+          alt="Last week's concert event"
+          width="400"
+          height="100"
+        />
+        <video controls>
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <section>
+        <h2 style="text-align: center; margin-top: 30px;">Register for an event</h2>
+        <form action="/submit" method="POST" novalidate>
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="full-name">Full Name</label>
+            <input
+              type="text"
+              name="full-name"
+              id="full-name"
+              placeholder="Enter your full name"
+              required
+              pattern="[A-Za-z\s]{3,50}"
+              title="Only letters and spaces allowed"
+            />
+
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="+251912345678"
+              required
+              pattern="^\+?[0-9]{10,15}$"
+              title="Enter a valid phone number"
+            />
+
+            <label for="dob">Date of Birth</label>
+            <input
+              type="date"
+              name="dob"
+              id="dob"
+              required
+            />
+
+            <label>Gender</label>
+            <label><input type="radio" name="gender" value="male" required /> Male</label>
+            <label><input type="radio" name="gender" value="female" required /> Female</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Attendance Type</legend>
+            <label for="attendance-type">How will you attend?</label>
+            <select name="attendance-type" id="attendance-type" required>
+              <option value="">-- Select an option --</option>
+              <option value="in-person">In Person</option>
+              <option value="virtually">Virtually</option>
+              <option value="not-sure">Not Sure Yet</option>
+            </select>
+          </fieldset>
+
+          <label for="comments">Special Comments</label>
+          <textarea
+            name="comments"
+            id="comments"
+            rows="3"
+            placeholder="Any special requests or questions?"
+            maxlength="200"
+          ></textarea>
+
+          <button type="submit">Register</button>
+        </form>
+      </section>
+
+      <footer>
+        <p>&copy; 2025 Eventers. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
